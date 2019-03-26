@@ -48,7 +48,7 @@ Adjusts the length (constant value) of the bottom layout constraint when keyboar
   - parameter minMargin: Specify the minimum margin between the keyboard and the bottom of the view the constraint is attached to. Default: 10.
   
   */
-  public func setup(_ bottomLayoutConstraint: NSLayoutConstraint,
+  @objc public func setup(_ bottomLayoutConstraint: NSLayoutConstraint,
     view: UIView, minMargin: CGFloat = 10) {
       
     initialConstraintConstant = bottomLayoutConstraint.constant
